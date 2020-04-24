@@ -1,0 +1,12 @@
+.breadcrumb {
+  background: 0;
+  padding-left: 0;
+  padding-top: 0;
+  color: $c-text-4;
+  * {
+    font-size: $txt_14px;
+  }
+  .active {
+    color: $c-text-1;
+  }
+}

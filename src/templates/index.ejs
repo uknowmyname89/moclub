@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no"
+  />
+  <meta name="description" content="Example of a Dashboard page built with Architect.">
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+<body>
+<div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar sidebar-mobile-open">
+  <%- include modules/header.ejs %>
+  <div class="app-main">
+    <%- include modules/sidebar.ejs %>
+    <div class="app-main__outer">
+      <div class="app-main__inner">
+        <div class="page-title-subheading opacity-10">
+          <%- include modules/breadcrumbp.ejs %>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div class="card dashboard">
+              <div class="card-header-tab card-header-tab-animation card-header">
+                <div class="card-header-title">
+                  User #1464d7ec
+                </div>
+                <a href="#" class="my-2 mr-2 ml-3 ml-md-auto btn btn-primary active">Print report<i class="icon icon_print ml-2"></i></a>
+              </div>
+              <div class="card-body pb-3 pb-md-0">
+                <div class="row flex-xl-nowrap">
+                  <div class="col mb-4">
+                    <img class="dashboard_photo dashboard_photo_main" src="./assets/img/photo.png" alt="">
+                  </div>
+                  <div class="col-lg-8 col-xl-7 mb-3 mb-xl-0 pl-0">
+                    <%- include modules/dashboard/circles.ejs %>
+                  </div>
+                  <div class="col-xl pl-xl-0">
+                    <%- include modules/dashboard/line-graphs.ejs %>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="body-tabs body-tabs-layout tabs-animated body-tabs-animated nav my-2">
+              <li class="nav-item">
+                <a role="tab" class="nav-link active" id="tab-1" data-toggle="tab" href="#tab-cont-1">
+                  <span>Graphs</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a role="tab" class="nav-link" id="tab-2" data-toggle="tab" href="#tab-cont-2">
+                  <span>Photos</span>
+                </a>
+              </li>
+            </ul>
+            <div class="mb-3 card dashboard">
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="tab-cont-1" role="tabpanel" aria-labelledby="home-tab">
+                  <%- include modules/dashboard/graphs.ejs %>
+                </div>
+                <div class="tab-pane fade" id="tab-cont-2" role="tabpanel" aria-labelledby="profile-tab">
+                  <%- include modules/dashboard/photos.ejs %>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

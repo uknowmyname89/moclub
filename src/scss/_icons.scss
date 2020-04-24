@@ -1,0 +1,34 @@
+$icons: (
+  ('print' '\e900' 1rem)
+  ('upload' '\e901' 1rem)
+  ('calen' '\e902' 1rem)
+  ('time' '\e90b' 1rem)
+  ('cross' '\e903' 1rem)
+  ('gray-cross' '\e909' 1rem)
+  ('dataset' '\e904' 1.4rem)
+  ('grid' '\e905' 1.4rem)
+  ('logo' '\e906' 5rem)
+  ('trash' '\e90c' 5rem)
+  ('dots' '\e90a' 5rem)
+  ('photo' '\e90f' 1rem)
+  ('subjects' '\e90e' 1rem)
+  ('users' '\e90d' 1rem)
+);
+
+.icon {
+  font-size: 1rem;
+  font-style: normal;
+
+  @each $icon in $icons {
+    &_#{nth($icon, 1)} {
+      font-family: 'icomoon';
+      font-size: nth($icon, 3) !important;
+      &:before{
+        content: nth($icon, 2); 
+      }
+    }
+  }
+}
+
+
+
