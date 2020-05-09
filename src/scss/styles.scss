@@ -1,18 +1,18 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~@fancyapps/fancybox/dist/jquery.fancybox.css";
+
 @import "variables";
 @import "fonts";
 @import "icons";
 
-@import "main.scss";
 @import "common.scss";
+@import "slick.scss";
 
 @import "elements/breadcrumb.scss";
 @import "elements/buttons.scss";
 @import "elements/text-color.scss";
-@import "elements/card.scss";
-@import "elements/dashboard.scss";
-@import "elements/circle.scss";
-@import "elements/photo-detail.scss";
-@import "elements/photo-help.scss";
-@import "elements/table.scss";
-@import "elements/tabs.scss";
-@import "elements/login.scss";
+@import "elements/header.scss";
+@import "elements/nav.scss";
+@import "elements/rooms.scss";
+@import "elements/news.scss";
+@import "elements/pagination.scss";

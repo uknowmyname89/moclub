@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Demo Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="./assets/slick.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+
+<div class="bg-blue pt-5 pb-3">
+  <div class="container">
+    <%- include modules/header.ejs %>
+    <%- include modules/menu.ejs %>
+  </div>
+</div>
+<div class="bg-soft search-widget inner">
+  <div class="container">
+    <div id="search-widget">Форма виджет</div>
+  </div>
+</div>
+
+<div class="bg-blue bg-blue__inner">
+
+
+<div class="container py-5">
+  <div class="breadcrumbs">
+    <a href="/">Главная</a> <span class="mx-2">»</span> О клубе
+  </div>
+
+
+  <h1>РЕСТОРАНЫ</h1>
+
+  <div class="rest-block">
+    <div class="pic-block mb-5">
+      <div class="row align-items-center">
+        <div class="col-md-8"><img class="img-fluid b-radius w-border" src="./assets/upload/1.jpg" alt=""></div>
+        <div class="col-md-4 my-4">
+          <p class="font-weight-bold fz-txt_20px text-white">«Ресторан на воде»</p>
+          <p class="text-white">Флагман Загородного клуба «Медвежьи озера» - самый большой и новый зал построен в 2016 году. Ресторан отличается своей продуманной планировкой, позволяющей устраивать различные зоны для проведения масштабных мероприятий от 40 до 150 гостей. Зал оформлен в чистых, светлых тонах располагает открытой верандой с видом на озера.</p>
+          <a href="#" class="btn">Подробнее »</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pic-block mb-5">
+      <div class="row align-items-center">
+        <div class="col-md-8"><img class="img-fluid b-radius w-border" src="./assets/upload/2.jpg" alt=""></div>
+        <div class="col-md-4 my-4">
+          <p class="font-weight-bold fz-txt_20px text-white">Ресторан «Малая медведица»</p>
+          <p class="text-white">Небольшой уютный зал поддерживает традиционный для отеля стиль горной деревни, позволяет размещать банкеты от 20 до 60 человек. Зал оформлен в светлых тонах с панорамными окнами и верхним естественным светом. Выразительным архитектурным элементом ресторана является просторная веранда с видом на озеро, на которой в теплое время года можно устраивать церемонии на открытом воздухе.</p>
+          <a href="#" class="btn">Подробнее »</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pic-block mb-5">
+      <div class="row align-items-center">
+        <div class="col-md-8"><img class="img-fluid b-radius w-border" src="./assets/upload/3.jpg" alt=""></div>
+        <div class="col-md-4 my-4">
+          <p class="font-weight-bold fz-txt_20px text-white">Ресторан «Большая медведица»</p>
+          <p class="text-white">Просторный зал в стиле горного шале для комфортного размещения банкетов от 30 до 120 человек. Натуральное дерево, камень, камин, масштабные окна - те архитектурные элементы, которые уместны для событий любого формата. Декоративным элементом ресторана является настоящий массивный камин, отапливаемый поленьями. Ресторан располагается на живописной лужайке в окружении леса и озер, позволяющей проводить уличные мероприятия.</p>
+          <a href="#" class="btn">Подробнее »</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+<%- include modules/footer.ejs %>
+
+
+</body>
+</html>
+
+
+
+
+

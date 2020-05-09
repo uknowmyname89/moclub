@@ -1,0 +1,44 @@
+.rooms-element {
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 12rem;
+    @media(max-width:768px) {
+      height: 18rem;
+    }
+  }
+  .btn{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+  }
+
+  &.gallery {
+    a {
+      display: block;
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 2;
+        border: 2px solid #FFFFFF;
+        border-radius: 14px;
+        left: 0;
+      }
+    }
+    span {
+      position: absolute;
+      display: inline-block;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 1rem 1.5rem;
+      color: #ffffff;
+      z-index: 3;
+      font-weight: bold;
+    }
+  }
+}

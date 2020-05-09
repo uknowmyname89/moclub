@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Demo Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="./assets/slick.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+
+<div class="bg-blue pt-5 pb-3">
+  <div class="container">
+    <%- include modules/header.ejs %>
+    <%- include modules/menu.ejs %>
+  </div>
+</div>
+<div class="bg-soft search-widget inner">
+  <div class="container">
+    <div id="search-widget">Форма виджет</div>
+  </div>
+</div>
+
+<div class="container py-5">
+  <div class="breadcrumbs">
+    <a href="/">Главная</a> <span class="mx-2">»</span> О клубе
+  </div>
+
+
+  <h1>НОВОСТИ</h1>
+
+  <div class="row news">
+    <div class="col-md-3">
+      <a href="#"><img class="img-fluid" src="./assets/upload/act1.jpg" alt=""></a>
+    </div>
+    <div class="col-md-9">
+      <p class="col-c-blue mb-3">19 февраля 2020г</p>
+      <a href="#" class="news__caption">МЫ ПОЛУЧИЛИ СЕРТИФИКАТ КАЧЕСТВА ОТ TRIPADVISOR!
+      </a>
+      <p>Приглашаем Вас посетить ресторан клуба, где Вы сможете насладиться блюдами от шеф-повара клуба Дмитрия Труханова, а каждую пятницу и субботу после 20.00 еще и исполнением на редкой электронной скрипке от скрипача-виртуоза Юрий Черкеза.</p>
+    </div>
+  </div>
+  <div class="row news">
+    <div class="col-md-3">
+      <a href="#"><img class="img-fluid" src="./assets/upload/act1.jpg" alt=""></a>
+    </div>
+    <div class="col-md-9">
+      <p class="col-c-blue mb-3">19 февраля 2020г</p>
+      <a href="#" class="news__caption">МЫ ПОЛУЧИЛИ СЕРТИФИКАТ КАЧЕСТВА ОТ TRIPADVISOR!
+      </a>
+      <p>Приглашаем Вас посетить ресторан клуба, где Вы сможете насладиться блюдами от шеф-повара клуба Дмитрия Труханова, а каждую пятницу и субботу после 20.00 еще и исполнением на редкой электронной скрипке от скрипача-виртуоза Юрий Черкеза.</p>
+    </div>
+  </div>
+  <div class="row news">
+    <div class="col-md-3">
+      <a href="#"><img class="img-fluid" src="./assets/upload/act1.jpg" alt=""></a>
+    </div>
+    <div class="col-md-9">
+      <p class="col-c-blue mb-3">19 февраля 2020г</p>
+      <a href="#" class="news__caption">МЫ ПОЛУЧИЛИ СЕРТИФИКАТ КАЧЕСТВА ОТ TRIPADVISOR!
+      </a>
+      <p>Приглашаем Вас посетить ресторан клуба, где Вы сможете насладиться блюдами от шеф-повара клуба Дмитрия Труханова, а каждую пятницу и субботу после 20.00 еще и исполнением на редкой электронной скрипке от скрипача-виртуоза Юрий Черкеза.</p>
+    </div>
+  </div>
+  <div class="row news">
+    <div class="col-md-3">
+      <a href="#"><img class="img-fluid" src="./assets/upload/act1.jpg" alt=""></a>
+    </div>
+    <div class="col-md-9">
+      <p class="col-c-blue mb-3">19 февраля 2020г</p>
+      <a href="#" class="news__caption">МЫ ПОЛУЧИЛИ СЕРТИФИКАТ КАЧЕСТВА ОТ TRIPADVISOR!
+      </a>
+      <p>Приглашаем Вас посетить ресторан клуба, где Вы сможете насладиться блюдами от шеф-повара клуба Дмитрия Труханова, а каждую пятницу и субботу после 20.00 еще и исполнением на редкой электронной скрипке от скрипача-виртуоза Юрий Черкеза.</p>
+    </div>
+  </div>
+
+  <%- include elements/paginator.ejs %>
+
+</div>
+
+<%- include modules/footer.ejs %>
+
+
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,20 @@
+.header {
+
+  @media(max-width:768px) {
+    .fz-txt_24px {
+      font-size: $txt_16px!important;
+    }
+    .fz-txt_15px {
+      font-size: $txt_13px!important;
+    }
+    .round {
+      display: none;
+    }
+    .text-hotel {
+      display: none;
+    }
+    .logo {
+      max-width: 14rem;
+    }
+  }
+}

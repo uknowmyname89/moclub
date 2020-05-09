@@ -1,69 +1,17 @@
-.mark-badge {
-  border-radius: 1px;
-  height: 1rem!important;
-  width: auto!important;
-  padding: 0 0.3rem;
-  text-align: center;
-  font-size: $txt_12px!important;
-  opacity: 1!important;
-  font-style: normal;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  &__yellow {
-    background: $c-yellow;
-    color: #fff;
-  }
-  &.metismenu-state-icon {
-    top: 2.08rem !important;
-    right: 0.8rem !important;
-  }
-}
-
-.tabs-animated {
-  .nav-link::before {
-    background: $c-blue;
-  }
-}
 .btn{
   text-align: center;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   text-transform: none;
-  &-round {
-    border-radius: 3rem;
-    padding: 0.7rem;
-    text-align: center;
-  }
-  &-white {
-    border: 2px solid rgba(255, 255, 255, 0.24);
-  }
-  &-primary {
-    background: $c-blue!important;
-    &:hover, &:active {
-      background: $c-d-blue!important;
-    }
-  }
-  &-green {
-    color: #fff!important;
-    background: $c-d-green!important;
-    &:hover, &:active {
-      background: $c-l-green!important;
-    }
-  }
-  &-upload {
-    transition: all 200ms;
-    display: flex!important;
-    align-items: center;
-    justify-content: center;
-    span {
-      transition: all 100ms;
-      white-space: nowrap;
-    }
-    &:hover{
-      background-color: $c-d-blue;
-    }
+  background: #fff;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-size: $txt_14px;
+  padding: 0.25rem 0.5rem;
+  color: $black;
+  &:hover {
+    background: $c-soft;
   }
 }
 

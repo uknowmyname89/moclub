@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Demo Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="./assets/slick.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+
+<div class="bg-blue pt-5 pb-3">
+  <div class="container">
+    <%- include modules/header.ejs %>
+    <%- include modules/menu.ejs %>
+  </div>
+</div>
+<div class="bg-soft search-widget inner">
+  <div class="container">
+    <div id="search-widget">Форма виджет</div>
+  </div>
+</div>
+
+<div class="bg-green bg-green__inner top-shadow">
+  <div class="container py-5">
+    <div class="breadcrumbs">
+      <a href="/">Главная</a> <span class="mx-2">»</span> О клубе
+    </div>
+
+
+    <h1>НАШИ КОТТЕДЖИ</h1>
+    <p>Загородный клуб «Медвежьи озера» приглашает вас на отдых в ближайшее Подмосковье, на берегу трех живописных озер по преданию живет чудовище, происходящее еще со времен Ледникового периода.</p>
+    <p>Здесь идеальное место для отдыха, когда типично русская природа сочетается с современным комфортом, отвечающим самым различным вкусам.</p>
+    <p>Исходя из предпочтений, Вы можете расположиться в комфортабельных коттеджах или в номерах гостиницы.</p>
+    <p>К Вашим услугам ресторан с русской и европейской кухнями, бар, универсальная площадка для игры в волейбол, баскетбол и бадминтон.</p>
+    <p>Чистый воздух, лес, пляж и доброжелательный персонал гарантирует всем хороший отдых с детьми. Катамараны, лодки летом, а лыжи и коньки зимой - всегда в вашем распоряжении.</p>
+    <p>У нас вы сможете получить клубную карту «Системы загородных отелей «Подмосковные берега»», дающую право на скидки во всех отелях системы, а также на участие в закрытых клубных мероприятиях.</p>
+    <p>Наше уникальное предложение – Вы будете иметь возможность предоставить свою клубную скидку коллеге, товарищу или члену семьи!</p>
+
+    <div class="row">
+
+      <div class="col-md-3 mt-5">
+        <div class="pic-block rooms-element">
+          <div class="position-relative mb-3">
+            <a href="#"><img class="img-fluid b-radius w-border shadow" src="./assets/upload/k1.jpg" alt=""></a>
+          </div>
+          <a href="#" class="text-white">Коттедж №1</a>
+        </div>
+      </div>
+      <div class="col-md-3 mt-5">
+        <div class="pic-block rooms-element">
+          <div class="position-relative mb-3">
+            <a href="#"><img class="img-fluid b-radius w-border shadow" src="./assets/upload/k2.jpg" alt=""></a>
+          </div>
+          <a href="#" class="text-white">Коттедж №2</a>
+        </div>
+      </div>
+      <div class="col-md-3 mt-5">
+        <div class="pic-block rooms-element">
+          <div class="position-relative mb-3">
+            <a href="#"><img class="img-fluid b-radius w-border shadow" src="./assets/upload/k3.jpg" alt=""></a>
+          </div>
+          <a href="#" class="text-white">Коттедж №3</a>
+        </div>
+      </div>
+      <div class="col-md-3 mt-5">
+        <div class="pic-block rooms-element">
+          <div class="position-relative mb-3">
+            <a href="#"><img class="img-fluid b-radius w-border shadow" src="./assets/upload/k4.jpg" alt=""></a>
+          </div>
+          <a href="#" class="text-white">Коттедж №4а</a>
+        </div>
+      </div>
+      <div class="col-md-3 mt-5">
+        <div class="pic-block rooms-element">
+          <div class="position-relative mb-3">
+            <a href="#"><img class="img-fluid b-radius w-border shadow" src="./assets/upload/k5.jpg" alt=""></a>
+          </div>
+          <a href="#" class="text-white">Коттедж №4б</a>
+        </div>
+      </div>
+      <div class="col-md-3 mt-5">
+        <div class="pic-block rooms-element">
+          <div class="position-relative mb-3">
+            <a href="#"><img class="img-fluid b-radius w-border shadow" src="./assets/upload/k6.jpg" alt=""></a>
+          </div>
+          <a href="#" class="text-white">Коттедж №5</a>
+        </div>
+      </div>
+      <div class="col-md-3 mt-5">
+        <div class="pic-block rooms-element">
+          <div class="position-relative mb-3">
+            <a href="#"><img class="img-fluid b-radius w-border shadow" src="./assets/upload/k7.jpg" alt=""></a>
+          </div>
+          <a href="#" class="text-white">Коттедж №6</a>
+        </div>
+      </div>
+      <div class="col-md-3 mt-5">
+        <div class="pic-block rooms-element">
+          <div class="position-relative mb-3">
+            <a href="#"><img class="img-fluid b-radius w-border shadow" src="./assets/upload/k8.jpg" alt=""></a>
+          </div>
+          <a href="#" class="text-white">Коттедж №7</a>
+        </div>
+      </div>
+      <div class="col-md-3 mt-5">
+        <div class="pic-block rooms-element">
+          <div class="position-relative mb-3">
+            <a href="#"><img class="img-fluid b-radius w-border shadow" src="./assets/upload/k9.jpg" alt=""></a>
+          </div>
+          <a href="#" class="text-white">Коттедж №8</a>
+        </div>
+      </div>
+      <div class="col-md-3 mt-5">
+        <div class="pic-block rooms-element">
+          <div class="position-relative mb-3">
+            <a href="#"><img class="img-fluid b-radius w-border shadow" src="./assets/upload/k10.jpg" alt=""></a>
+          </div>
+          <a href="#" class="text-white">Коттедж №9</a>
+        </div>
+      </div>
+      <div class="col-md-3 mt-5">
+        <div class="pic-block rooms-element">
+          <div class="position-relative mb-3">
+            <a href="#"><img class="img-fluid b-radius w-border shadow" src="./assets/upload/k11.jpg" alt=""></a>
+          </div>
+          <a href="#" class="text-white">Коттедж №10</a>
+        </div>
+      </div>
+      <div class="col-md-3 mt-5">
+        <div class="pic-block rooms-element">
+          <div class="position-relative mb-3">
+            <a href="#"><img class="img-fluid b-radius w-border shadow" src="./assets/upload/k12.jpg" alt=""></a>
+          </div>
+          <a href="#" class="text-white">Коттедж №11</a>
+        </div>
+      </div>
+      <div class="col-md-3 mt-5">
+        <div class="pic-block rooms-element">
+          <div class="position-relative mb-3">
+            <a href="#"><img class="img-fluid b-radius w-border shadow" src="./assets/upload/k13.jpg" alt=""></a>
+          </div>
+          <a href="#" class="text-white">Коттедж №14,15,16</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+
+<%- include modules/footer.ejs %>
+
+
+</body>
+</html>
+
+
+
+
+
