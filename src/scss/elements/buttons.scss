@@ -10,8 +10,16 @@
   font-size: $txt_14px;
   padding: 0.25rem 0.5rem;
   color: $black;
+  box-shadow: none!important;
   &:hover {
     background: $c-soft;
+  }
+  &.brown {
+    background: $c-soft;
+    &:hover {
+      background: darken($c-soft, 20);
+      color: #fff;
+    }
   }
 }
 

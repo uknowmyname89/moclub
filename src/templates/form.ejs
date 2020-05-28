@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Demo Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="./assets/slick.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+
+<div class="bg-blue pt-5 pb-3">
+  <div class="container">
+    <%- include modules/header.ejs %>
+    <%- include modules/menu.ejs %>
+  </div>
+</div>
+<div class="bg-soft search-widget inner">
+  <div class="container">
+    <div id="search-widget">Форма виджет</div>
+  </div>
+</div>
+
+<div class="container py-5">
+  <a href="#" class="btn brown mt-5 ajax-modal" data-remote="/modal.html" data-target="#modal">Оставить заявку</a>
+
+
+  <div class="modal" id="modal">
+    <div class="modal-dialog sub-small">
+      <div class="modal-content">
+
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <form class="bord" action="">
+    <p class="txt_24px font-weight-light text-uppercase text-center">Задать вопрос</p>
+    <div class="row modal-inp">
+      <div class="col-sm-6 mb-2">
+        <input class="w-100" type="text" name="name" placeholder="Ваше имя">
+      </div>
+      <div class="col-sm-6 mb-2">
+        <input class="w-100" type="text" name="phone" placeholder="Номер телефона">
+      </div>
+      <div class="col-sm-12 mb-2">
+        <input class="w-100" type="text" name="email" placeholder="Email (Необязательно)">
+      </div>
+      <div class="col-sm-12">
+        <textarea class="w-100" name="comment" cols="30" rows="4" placeholder="Комментарий"></textarea>
+      </div>
+    </div>
+    <div class="text-center mt-3 mb-5">
+      <a href="#" class="btn brown w-100">Отправить заявку</a>
+    </div>
+  </form>
+</div>
+
+
+
+<%- include modules/footer.ejs %>
+
+
+</body>
+</html>
+
+
+
+
+

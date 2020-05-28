@@ -1,0 +1,53 @@
+select,
+input,
+textarea, .inputlike{
+  font-family: $font-family-sans-serif;
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  outline: none;
+  font-size: $txt_12px;
+  text-align: left;
+  min-width: 1rem;
+  line-height: 1rem!important;
+  padding: 0.5rem 1rem 0.3rem 1rem;
+  &.white {
+    border-color: #fff;
+    color: #fff;
+    &::placeholder {
+      color: #fff;
+    }
+  }
+}
+
+.w-100 {
+  select,
+  input,
+  textarea, .inputlike{
+    width: 100%;
+  }
+}
+
+.inputlike {
+  input {
+    border: 0;
+    padding: 0;
+    min-height: 0;
+    line-height: 1rem;
+  }
+}
+
+.noborder{
+  border: 0px;
+}
+.nopadding{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+form.bord {
+  background: #f6f6f6;
+  border-radius: 1rem;
+  padding: 2rem 2rem 0.5rem;
+}
