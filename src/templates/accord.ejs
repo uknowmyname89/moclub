@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Demo Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="./assets/slick.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+
+<div class="bg-blue pt-5 pb-3">
+  <div class="container">
+    <%- include modules/header.ejs %>
+    <%- include modules/menu.ejs %>
+  </div>
+</div>
+<div class="bg-soft search-widget inner">
+  <div class="container">
+    <div id="search-widget">Форма виджет</div>
+  </div>
+</div>
+
+<div class="container py-5">
+  <div class="breadcrumbs">
+    <a href="/">Главная</a> <span class="mx-2">»</span> О клубе
+  </div>
+  <h1>Аккордион</h1>
+
+  <p>Загородный клуб «Медвежьи озера» приглашает вас на отдых в ближайшее Подмосковье, на берегу трех живописных озер по преданию живет чудовище, происходящее еще со времен Ледникового периода.</p>
+  <p>Здесь идеальное место для отдыха, когда типично русская природа сочетается с современным комфортом, отвечающим самым различным вкусам.</p>
+  <p>Исходя из предпочтений, Вы можете расположиться в комфортабельных коттеджах или в номерах гостиницы.</p>
+  <p>К Вашим услугам ресторан с русской и европейской кухнями, бар, универсальная площадка для игры в волейбол, баскетбол и бадминтон.</p>
+  <p>Чистый воздух, лес, пляж и доброжелательный персонал гарантирует всем хороший отдых с детьми. Катамараны, лодки летом, а лыжи и коньки зимой - всегда в вашем распоряжении.</p>
+  <p>У нас вы сможете получить клубную карту «Системы загородных отелей «Подмосковные берега»», дающую право на скидки во всех отелях системы, а также на участие в закрытых клубных мероприятиях.</p>
+  <p>Наше уникальное предложение – Вы будете иметь возможность предоставить свою клубную скидку коллеге, товарищу или члену семьи!</p>
+
+
+  <div id="accord" class="accord mb-4">
+
+    <div class="accord__item">
+      <div id="headingOne" class="card-header">
+        <button type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="collapsible-link">Линк текст 123</button>
+      </div>
+      <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse show">
+        <div class="p-3">
+          <p class="m-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="accord__item">
+      <div id="headingTwo" class="card-header">
+        <button type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="collapsed collapsible-link">Линк текст 123</button>
+      </div>
+      <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample" class="collapse">
+        <div class="p-3">
+          <p class="m-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="accord__item">
+      <div id="headingThree" class="card-header">
+        <button type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="collapsed collapsible-link">Линк текст 123</button>
+      </div>
+      <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample" class="collapse">
+        <div class="p-3">
+          <p class="m-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <p>Загородный клуб «Медвежьи озера» приглашает вас на отдых в ближайшее Подмосковье, на берегу трех живописных озер по преданию живет чудовище, происходящее еще со времен Ледникового периода.</p>
+  <p>Здесь идеальное место для отдыха, когда типично русская природа сочетается с современным комфортом, отвечающим самым различным вкусам.</p>
+  <p>Исходя из предпочтений, Вы можете расположиться в комфортабельных коттеджах или в номерах гостиницы.</p>
+  <p>К Вашим услугам ресторан с русской и европейской кухнями, бар, универсальная площадка для игры в волейбол, баскетбол и бадминтон.</p>
+  <p>Чистый воздух, лес, пляж и доброжелательный персонал гарантирует всем хороший отдых с детьми. Катамараны, лодки летом, а лыжи и коньки зимой - всегда в вашем распоряжении.</p>
+  <p>У нас вы сможете получить клубную карту «Системы загородных отелей «Подмосковные берега»», дающую право на скидки во всех отелях системы, а также на участие в закрытых клубных мероприятиях.</p>
+  <p>Наше уникальное предложение – Вы будете иметь возможность предоставить свою клубную скидку коллеге, товарищу или члену семьи!</p>
+
+
+</div>
+
+<%- include modules/footer.ejs %>
+
+
+</body>
+</html>
+
+
+
+
+

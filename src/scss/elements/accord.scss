@@ -1,0 +1,49 @@
+.accord {
+  &__item {
+    background: #f7f7f7;
+    margin-bottom: 3px;
+  }
+
+  .card-header {
+    padding: 0.7rem 0.7rem 0.5rem;
+    margin-bottom: 2px;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 0px;
+    font-weight: bold;
+  }
+
+  .collapsible-link {
+    width: 100%;
+    position: relative;
+    text-align: left;
+    border: 0px!important;
+    outline: none!important;
+    background: none;
+    color: $c-black;
+  }
+
+  .collapsible-link::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0.8rem;
+    width: 13px;
+    height: 12px;
+    display: block;
+    background-image: url($path-assets + '/vectors/arrow_d.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: -6px;
+  }
+
+  .collapsible-link[aria-expanded='true']::before {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+
