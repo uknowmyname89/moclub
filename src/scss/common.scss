@@ -140,6 +140,13 @@ ol{
     margin-top: 0rem;
     padding: 3rem 0;
   }
+  .container {
+    position: relative;
+    #search-widget, #search-widgetplace-holder{
+      max-width: 100%;
+      left: 0px;
+    }
+  }
 }
 
 .map {
