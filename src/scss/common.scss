@@ -161,3 +161,26 @@ ol{
 .dropdown > .dropdown-toggle:active {
   pointer-events: none;
 }
+
+
+@media(max-width:767px) {
+  .row-scroll{
+    overflow-x: auto;
+    white-space: nowrap;
+    display: block;
+
+    -webkit-overflow-scrolling: touch;
+    -webkit-transform: translateZ(0px);
+
+    >*{
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    &.row-visible-next{
+      > div {
+        width: 70%;
+      }
+    }
+  }
+}

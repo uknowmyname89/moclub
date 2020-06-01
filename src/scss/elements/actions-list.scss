@@ -1,0 +1,27 @@
+.actions-list {
+  .pic-block{
+    outline: none;
+    background: #fff;
+    white-space: normal;
+    display: inline-block;
+    vertical-align: text-top;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    border: 2px solid #fff;
+    img {
+      width: 100%;
+    }
+    .info{
+      padding: 1rem 1.5rem 3.5rem;
+      min-height: 11rem;
+      position: relative;
+      .bottom {
+        position: absolute;
+        bottom: 0rem;
+        left: 0;
+        padding: 0 1.5rem;
+      }
+    }
+  }
+}

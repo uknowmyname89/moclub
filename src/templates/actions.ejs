@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Demo Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="./assets/slick.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+
+<div class="bg-blue pt-5 pb-3">
+  <div class="container">
+    <%- include modules/header.ejs %>
+    <%- include modules/menu.ejs %>
+  </div>
+</div>
+<div class="bg-soft search-widget inner">
+  <div class="container">
+    <div id="search-widget">Форма виджет</div>
+  </div>
+</div>
+
+<div class="container py-5">
+  <div class="breadcrumbs">
+    <a href="/">Главная</a> <span class="mx-2">»</span> О клубе
+  </div>
+
+  <h1>Акции</h1>
+
+  <div class="row actions-list row-scroll">
+    <div class="col-md-4 pb-4">
+      <div class="pic-block b-radius shadow">
+      <img class="img-fluid" src="./assets/upload/act1.jpg" alt="">
+      <div class="info">
+        <p class="fz-txt_20px font-weight-bold mb-1">Антивирусный заезд</p>
+        <p>Сбалансированное питание и ежедневные тренировки</p>
+        <p class="font-weight-bold bottom">Скидка 30% на посещение СПА-зоны</p>
+      </div>
+      </div>
+    </div>
+    <div class="col-md-4 pb-4">
+      <div class="pic-block b-radius shadow">
+      <img class="img-fluid" src="./assets/upload/act2.jpg" alt="">
+      <div class="info">
+        <p class="fz-txt_20px font-weight-bold mb-1">Мама и дитя</p>
+        <p>Каникулы на свежем воздухе Питание полный пансион</p>
+        <p class="font-weight-bold bottom">Скидка 35% на 3и и последующие сутки</p>
+      </div>
+      </div>
+    </div>
+    <div class="col-md-4 pb-4">
+      <div class="pic-block b-radius shadow">
+      <img class="img-fluid" src="./assets/upload/act3.jpg" alt="">
+      <div class="info">
+        <p class="fz-txt_20px font-weight-bold mb-1">Скидка пенсионерам 15%</p>
+        <p>На гостиничные номера</p>
+        <p class="font-weight-bold bottom">Кроме праздничных заездов</p>
+      </div>
+      </div>
+    </div>
+    <div class="col-md-4 pb-4">
+      <div class="pic-block b-radius shadow">
+      <img class="img-fluid" src="./assets/upload/act4.jpg" alt="">
+      <div class="info">
+        <p class="fz-txt_20px font-weight-bold mb-1">Скидка 15%</p>
+        <p>KIBERSALE</p>
+        <p class="font-weight-bold bottom">Только при заказе и предоплаты на сайте</p>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include modules/footer.ejs %>
+
+
+</body>
+</html>
+
+
+
+
+
