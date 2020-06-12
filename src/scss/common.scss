@@ -132,9 +132,14 @@ ol{
   }
 }
 
+.search-widget-top{
+  padding: 12rem 0 0;
+  margin-top: -15rem;
+}
 .search-widget{
   padding: 9rem 0 3rem;
-  margin-top: -4rem;
+  border-top: 7px solid #fff;
+  border-bottom: 7px solid #fff;
   font-size: 2rem;
   &.inner {
     margin-top: 0rem;
