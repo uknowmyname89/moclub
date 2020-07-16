@@ -2,7 +2,7 @@ $(function () {
   $('.slick-gallery__full').not('.no-thumb').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
     fade: false,
     cssEase: 'cubic-bezier(.51,.92,.24,1.15)',
     dots: false,
@@ -13,7 +13,7 @@ $(function () {
   $('.slick-gallery__full.no-thumb').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
     fade: false,
     dots: false,
   });

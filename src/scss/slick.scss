@@ -151,10 +151,12 @@
 
 
 .slick-arrow{
+  background: none;
   font-size: 0;
-  border: 0;
+  border: 0!important;
   height: 2.2rem;
   width: 2.2rem;
+  outline: none!important;
   cursor: pointer;
   position: absolute;
   z-index: 2;
@@ -339,8 +341,18 @@
       outline: none;
       margin-bottom: 0.2rem;
       figure{
+        position: relative;
         margin-bottom: 0;
         display: block!important;
+        div.text {
+          background: #0000005c;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          padding: 1rem;
+          border-bottom-left-radius: 15px;
+          border-bottom-right-radius: 15px;
+        }
         img{
           width: 100%;
           border-radius: 14px;
