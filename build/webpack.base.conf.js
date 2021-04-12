@@ -38,7 +38,7 @@ module.exports = {
   entry: config.chunks,
   output: {
     path: resolve('dist'),
-    filename: '[name]-[hash].js'
+    filename: '[name].js'
   },
   plugins: [
     new CopyWebpackPlugin([
@@ -56,14 +56,14 @@ module.exports = {
         test: /fonts[\/|\\].*\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
         loader: "file-loader",
         options: {
-          name: assetsPath('fonts/[name].[hash:7].[ext]')
+          name: assetsPath('fonts/[name].[ext]')
         }
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: "file-loader",
         options: {
-          name: assetsPath('fonts/[name].[hash:7].[ext]')
+          name: assetsPath('fonts/[name].[ext]')
         }
       }
     ]

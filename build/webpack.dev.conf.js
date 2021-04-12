@@ -25,7 +25,7 @@ const webpackConfig = merge(baseWebpackConfig, {
   },
   plugins: [
     new ExtractTextPlugin({
-      filename: '[name]-[hash].css',
+      filename: '[name].css',
       allChunks: true
     })
   ]

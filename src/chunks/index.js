@@ -10,7 +10,7 @@ import datepicker from 'js-datepicker'
 $(function () {
   if($('.datepicker').length){
     const picker = datepicker('.datepicker', {
-      formatter: (input, date, instance) => {
+      formatter: function(input, date, instance) {
         const value = date.toLocaleDateString()
         input.value = value
       },
