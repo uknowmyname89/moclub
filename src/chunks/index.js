@@ -5,17 +5,20 @@ require('../scss/styles.scss');
 import 'js-datepicker/src/datepicker';
 import 'js-datepicker/dist/datepicker.min.css';
 import datepicker from 'js-datepicker'
-const picker = datepicker('.datepicker', {
-  formatter: function(input, date, instance) {
-    const value = date.toLocaleDateString()
-    input.value = value
-  },
-  position: 'br',
-  customDays: ['П', 'В', 'С', 'Ч', 'П', 'С', 'В'],
-  customMonths: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь']
-});
+
 
 $(function () {
+  if($('.datepicker').length){
+    const picker = datepicker('.datepicker', {
+      formatter: (input, date, instance) => {
+        const value = date.toLocaleDateString()
+        input.value = value
+      },
+      position: 'br',
+      customDays: ['П', 'В', 'С', 'Ч', 'П', 'С', 'В'],
+      customMonths: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь']
+    });
+  };
   $('.pic-slider').each(function(){
     $(this).slick({
       dots: false,
