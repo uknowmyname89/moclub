@@ -21,6 +21,7 @@
     "start": "npm run dev"
   },
   "dependencies": {
+    "js-datepicker": "^5.18.0",
     "slick-carousel": "^1.8.1",
     "sweetalert": "^2.1.2"
   },

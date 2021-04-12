@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Demo Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="./assets/slick.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+
+<div class="bg-blue pt-5 pb-3">
+  <div class="container">
+    <%- include modules/header.ejs %>
+    <%- include modules/menu.ejs %>
+  </div>
+</div>
+<div class="bg-soft search-widget inner">
+  <div class="container">
+    <div id="search-widget">Форма виджет</div>
+  </div>
+</div>
+<div id="wedding">
+  <div class="bg-wood">
+    <div class="container py-5">
+      <div class="wedding-block block1">
+        <div class="object-gallery position-relative">
+          <div class="text-block">
+            <p class="caption">
+              <span>СВАДЕБНАЯ</span>ПРЕЗЕТАЦИЯ
+            </p>
+            <a class="btn" href="#">СКАЧАТЬ ПРЕЗЕНТАЦИЮ</a>
+          </div>
+          <div class="sl-holder slick-gallery__full round-shadow" data-slick-full="true">
+            <figure><img src="./assets/wedding/main-slider/1.jpg"></figure>
+            <figure><img src="./assets/wedding/main-slider/2.jpg"></figure>
+            <figure><img src="./assets/wedding/main-slider/3.jpg"></figure>
+            <figure><img src="./assets/wedding/main-slider/4.jpg"></figure>
+            <figure><img src="./assets/wedding/main-slider/5.jpg"></figure>
+            <figure><img src="./assets/wedding/main-slider/6.jpg"></figure>
+            <figure><img src="./assets/wedding/main-slider/7.jpg"></figure>
+            <figure><img src="./assets/wedding/main-slider/8.jpg"></figure>
+          </div>
+        </div>
+        <div class="sl-holder slick-gallery__thumbnails wedding-thumbnails" data-slick-thumb="true">
+          <img src="./assets/wedding/main-slider/1.jpg">
+          <img src="./assets/wedding/main-slider/2.jpg">
+          <img src="./assets/wedding/main-slider/3.jpg">
+          <img src="./assets/wedding/main-slider/4.jpg">
+          <img src="./assets/wedding/main-slider/5.jpg">
+          <img src="./assets/wedding/main-slider/6.jpg">
+          <img src="./assets/wedding/main-slider/7.jpg">
+          <img src="./assets/wedding/main-slider/8.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container block2">
+    <div class="row align-items-center mb-5">
+      <div class="col-md-7 text-md-right">
+        <p class="font-weight-bold fz-txt_28px mb-1">Незабываемая свадьба</p>
+        <p class="fz-txt_24px mb-0">на берегу двух озер в 12 км от МКАД</p>
+      </div>
+      <div class="col-md-5">
+        <a href="#" class="d-flex align-items-center col-c-green">
+          <img class="mr-3" src="./assets/wedding/banket.svg">
+          <div>
+            <p class="col-c-green fz-txt_18px mb-1">Посмотрите наше</p>
+            <p class="col-c-green font-weight-bold fz-txt_24px mb-0">Банкетное меню</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <div class="round-shadow overflow-hidden">
+          <img class="img-wed" src="./assets/wedding/wed.jpg">
+          <a href="#" class="bottom-button">Свадебные площадки</a>
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <form class="round-shadow" action="">
+          <div class="green-form">
+            <p class="fz-txt_24px py-4">Забронировать дату<br>торжества</p>
+            <div class="row">
+              <div class="col-6 mb-4">
+                <input type="text" name="name" required placeholder="Ваше Имя">
+              </div>
+              <div class="col-6 mb-4">
+                <input type="text" name="email" required placeholder="Ваш Email">
+              </div>
+              <div class="col-6 mb-4">
+                <input type="text" name="phone" required placeholder="Телефон">
+              </div>
+              <div class="col-6 mb-4">
+                <input type="text" name="date" class="datepicker" required placeholder="Дата">
+              </div>
+            </div>
+          </div>
+          <input type="submit" class="bottom-button" value="Отправить заявку">
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="bg-wood">
+    <div class="container py-5">
+      <div class="wedding-block block3">
+        <div class="object-gallery position-relative">
+          <div class="text-block">
+            <p class="caption">
+              <span>Пирс для выездной</span>РЕГИСТРАЦИИ
+            </p>
+          </div>
+          <div class="sl-holder slick-gallery__full round-shadow" data-slick-full="true">
+            <figure><img src="./assets/wedding/pirs/1.jpg"></figure>
+            <figure><img src="./assets/wedding/pirs/2.jpg"></figure>
+            <figure><img src="./assets/wedding/pirs/3.jpg"></figure>
+            <figure><img src="./assets/wedding/pirs/4.jpg"></figure>
+            <figure><img src="./assets/wedding/pirs/5.jpg"></figure>
+          </div>
+        </div>
+        <div class="sl-holder slick-gallery__thumbnails wedding-thumbnails" data-slick-thumb="true">
+          <img src="./assets/wedding/pirs/1.jpg">
+          <img src="./assets/wedding/pirs/2.jpg">
+          <img src="./assets/wedding/pirs/3.jpg">
+          <img src="./assets/wedding/pirs/4.jpg">
+          <img src="./assets/wedding/pirs/5.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="space"></div>
+
+  <div class="bg-green pt-5  pb-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <p class="col-auto fz-txt_36px text-white mb-0">Выездные церемонии</p>
+        <div class="col-auto mb-3">
+          <div class="inner-slider-dots"></div>
+        </div>
+      </div>
+      <div class="four-slider sl-holder">
+        <a data-fancybox="viezd" href="./assets/wedding/viezd/1.jpg" data-fancybox>
+          <img class="img-fluid b-radius w-border shadow" src="./assets/wedding/viezd/1.jpg" alt="">
+        </a>
+        <a data-fancybox="viezd" href="./assets/wedding/viezd/2.jpg" data-fancybox>
+          <img class="img-fluid b-radius w-border shadow" src="./assets/wedding/viezd/2.jpg" alt="">
+        </a>
+        <a data-fancybox="viezd" href="./assets/wedding/viezd/3.jpg" data-fancybox>
+          <img class="img-fluid b-radius w-border shadow" src="./assets/wedding/viezd/3.jpg" alt="">
+        </a>
+        <a data-fancybox="viezd" href="./assets/wedding/viezd/4.jpg" data-fancybox>
+          <img class="img-fluid b-radius w-border shadow" src="./assets/wedding/viezd/4.jpg" alt="">
+        </a>
+        <a data-fancybox="viezd" href="./assets/wedding/viezd/5.jpg" data-fancybox>
+          <img class="img-fluid b-radius w-border shadow" src="./assets/wedding/viezd/5.jpg" alt="">
+        </a>
+        <a data-fancybox="viezd" href="./assets/wedding/viezd/6.jpg" data-fancybox>
+          <img class="img-fluid b-radius w-border shadow" src="./assets/wedding/viezd/6.jpg" alt="">
+        </a>
+        <a data-fancybox="viezd" href="./assets/wedding/viezd/7.jpg" data-fancybox>
+          <img class="img-fluid b-radius w-border shadow" src="./assets/wedding/viezd/7.jpg" alt="">
+        </a>
+        <a data-fancybox="viezd" href="./assets/wedding/viezd/8.jpg" data-fancybox>
+          <img class="img-fluid b-radius w-border shadow" src="./assets/wedding/viezd/8.jpg" alt="">
+        </a>
+      </div>
+      <form class="round-shadow block4" action="">
+        <div class="green-form">
+          <p class="fz-txt_24px py-4">Забронировать дату<br>торжества</p>
+          <div class="row">
+            <div class="col-6 col-md-3 mb-4">
+              <input type="text" name="name" required placeholder="Ваше Имя">
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+              <input type="text" name="email" required placeholder="Ваш Email">
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+              <input type="text" name="phone" required placeholder="Телефон">
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+              <input type="text" name="date" class="datepicker" required placeholder="Дата">
+            </div>
+          </div>
+        </div>
+        <input type="submit" class="bottom-button" value="Отправить заявку">
+      </form>
+    </div>
+  </div>
+  <div class="bg-soft pt-5  pb-5">
+    <div class="container pt-5">
+      <div class="row align-items-center">
+        <p class="col-auto fz-txt_36px text-white mb-0">Детали Вашей свадьбы</p>
+        <div class="col-auto mb-3">
+          <div class="inner-slider-dots"></div>
+        </div>
+      </div>
+      <div class="four-slider sl-holder">
+        <a data-fancybox="dop" href="./assets/wedding/dop/1.jpg" data-fancybox>
+          <img class="img-fluid b-radius w-border shadow" src="./assets/wedding/dop/1.jpg" alt="">
+        </a>
+        <a data-fancybox="dop" href="./assets/wedding/dop/2.jpg" data-fancybox>
+          <img class="img-fluid b-radius w-border shadow" src="./assets/wedding/dop/2.jpg" alt="">
+        </a>
+        <a data-fancybox="dop" href="./assets/wedding/dop/3.jpg" data-fancybox>
+          <img class="img-fluid b-radius w-border shadow" src="./assets/wedding/dop/3.jpg" alt="">
+        </a>
+        <a data-fancybox="dop" href="./assets/wedding/dop/4.jpg" data-fancybox>
+          <img class="img-fluid b-radius w-border shadow" src="./assets/wedding/dop/4.jpg" alt="">
+        </a>
+        <a data-fancybox="dop" href="./assets/wedding/dop/5.jpg" data-fancybox>
+          <img class="img-fluid b-radius w-border shadow" src="./assets/wedding/dop/5.jpg" alt="">
+        </a>
+        <a data-fancybox="dop" href="./assets/wedding/dop/6.jpg" data-fancybox>
+          <img class="img-fluid b-radius w-border shadow" src="./assets/wedding/dop/6.jpg" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pt-3  pb-5">
+    <div class="container pt-5 text-center">
+      <p class="fz-txt_32px mb-0 text-uppercase">наши Ведущие</p>
+      <p class="fz-txt_24px mb-5 text-uppercase">свадебной церемонии</p>
+
+      <div class="row align-items-center justify-content-center">
+        <div class="col-6 col-md-4 text-center">
+          <img class="rad-100" src="./assets/wedding/evg.jpg" alt="">
+          <p>Евгений Анисимов</p>
+        </div>
+        <div class="col-6 col-md-4 text-center">
+          <img class="rad-100" src="./assets/wedding/vlad.jpg" alt="">
+          <p>Влад Скульский</p>
+        </div>
+      </div>
+
+      <form class="round-shadow mt-5" action="">
+        <div class="green-form blue">
+          <p class="fz-txt_24px py-4">Остались вопросы? Мы поможем!</p>
+          <div class="row">
+            <div class="col-12 col-md-4 mb-4">
+              <input type="text" name="name" required placeholder="Ваше Имя">
+            </div>
+            <div class="col-6 col-md-4 mb-4">
+              <input type="text" name="email" required placeholder="Ваш Email">
+            </div>
+            <div class="col-6 col-md-4 mb-4">
+              <input type="text" name="phone" required placeholder="Телефон">
+            </div>
+          </div>
+        </div>
+        <input type="submit" class="bottom-button" value="Отправить вопрос">
+      </form>
+
+    </div>
+  </div>
+
+</div>
+
+
+<%- include modules/footer.ejs %>
+
+
+</body>
+</html>
+
+
+
+
+

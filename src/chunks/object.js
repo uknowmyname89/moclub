@@ -18,7 +18,7 @@ $(function () {
     dots: false,
   });
 
-  $('.slick-gallery__thumbnails').slick({
+  $('.slick-gallery__thumbnails').not('.wedding-thumbnails').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     asNavFor: '.slick-gallery__full',
@@ -44,6 +44,34 @@ $(function () {
     ]
   });
 
+  $('.wedding-thumbnails').slick({
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    asNavFor: '.slick-gallery__full',
+    dots: false,
+    centerPadding: '120px',
+    arrows: false,
+    focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+    ]
+  });
+
+  $('.slick-gallery__thumbnails .slick-slide').removeClass('slick-active');
+  $('.slick-gallery__thumbnails .slick-slide').eq(0).addClass('slick-active');
   $('.slick-gallery__thumbnails .slick-slide').removeClass('slick-active');
   $('.slick-gallery__thumbnails .slick-slide').eq(0).addClass('slick-active');
 

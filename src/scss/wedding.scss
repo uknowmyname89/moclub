@@ -1,0 +1,154 @@
+#wedding{
+  .block1{
+    padding-top: 70px;
+    margin-bottom: -300px;
+  }
+  .block2{
+    padding-top: 300px;
+    margin-bottom: -76px;
+  }
+  .block3{
+    padding-top: 70px;
+    margin-bottom: -300px;
+  }
+  .block4{
+    margin-bottom: -108px;
+    position: relative;
+  }
+  .space{
+    height: 300px;
+  }
+  .wedding-block{
+    position: relative;
+    .round-shadow{
+      overflow: hidden;
+    }
+    a.btn{
+      position: absolute;
+      bottom: 2rem;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 215px;
+      font-weight: bold;
+      padding: 11px;
+      z-index: 1;
+      text-shadow: 0 1px 1px #ffffff;
+      box-shadow: 0px 3px 27px #0000005e !important;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.438) 0%, rgba(255, 255, 255, 0) 64.71%), #CCBA99;
+    }
+    .caption{
+      font-size: $txt_52px;
+      position: absolute;
+      bottom: 6rem;
+      font-weight: bold;
+      color: #fff;
+      z-index: 1;
+      text-align: center;
+      line-height: 1;
+      margin: auto;
+      left: 0;
+      right: 0;
+      text-shadow: 0 6px 40px #00000075;
+      span{
+        display: block;
+        font-size: $txt_48px;
+      }
+      @media(max-width:768px) {
+        font-size: $txt_28px;
+        span{
+          display: block;
+          font-size: $txt_22px;
+        }
+      }
+    }
+    .slick-slide{
+      margin-bottom: 0;
+      img{
+        border: 0;
+        border-radius: 0;
+        max-height: 600px;
+        object-fit: cover;
+      }
+    }
+  }
+  .round-shadow{
+    background: #FFFFFF;
+    box-shadow: 0px 32px 100px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+  }
+  .bottom-button{
+    text-decoration: none;
+    height: 60px;
+    text-align: center;
+    border-radius: 0;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: $c-black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    transition: all 200ms ease-in;
+    width: 100%;
+    border: 0;
+    &:hover{
+      background: $c-soft;
+    }
+  }
+  .green-form{
+    padding: 1rem 2rem 2rem;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.074) 34.23%, rgba(255, 255, 255, 0) 63.81%), #2B451F;
+    color: #fff;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    &.blue{
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.074) 34.23%, rgba(255, 255, 255, 0) 63.81%), #1D454F;
+    }
+    input{
+      border: 0;
+      border-bottom: 2px solid #fff;
+      padding: 0 0 0.6rem;
+      border-radius: 0;
+      width: 100%;
+      color: #fff;
+      &::placeholder{
+        color: rgba(255, 255, 255, 0.58);
+      }
+    }
+  }
+  .img-wed{
+    height: 287px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .sl-holder{
+    visibility: hidden;
+    opacity: 0;
+    transition: all 200ms ease-in;
+    &.slick-initialized  {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  .rad-100{
+    border-radius: 100%;
+    margin-bottom: 1rem;
+    max-width: 14rem;
+    width: 100%;
+  }
+  :focus{
+    border: 0;
+    outline: none;
+  }
+  .four-slider{
+    img{
+      height: 10rem;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+}
+
+
