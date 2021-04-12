@@ -274,6 +274,12 @@
       }
     }
   }
+  a.pic-block{
+    color: $c-blue;
+    *{
+      color: $c-blue;
+    }
+  }
 }
 
 .four-slider{
