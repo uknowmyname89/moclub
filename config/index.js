@@ -6,7 +6,7 @@ const path = require('path'),
 function toObject (paths) {
   const list = {};
 
-  paths.forEach(path => {
+  paths.forEach(function(path) {
     const name = path.split('/').slice(-1)[0],
       filename = name.split('.');
 
