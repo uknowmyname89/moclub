@@ -7,7 +7,7 @@ const merge = require('webpack-merge'),
 
 const webpackConfig = merge(baseWebpackConfig, {
   output: {
-    filename: '[name]-[hash].min.js'
+    filename: '[name].min.js'
   },
   module: {
     loaders: [
@@ -38,7 +38,7 @@ const webpackConfig = merge(baseWebpackConfig, {
   },
   plugins: [
     new ExtractTextPlugin({
-      filename: '[name]-[hash].min.css',
+      filename: '[name].min.css',
       allChunks: true
     }),
     new UglifyJsPlugin({

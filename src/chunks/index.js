@@ -6,7 +6,7 @@ import 'js-datepicker/src/datepicker';
 import 'js-datepicker/dist/datepicker.min.css';
 import datepicker from 'js-datepicker'
 const picker = datepicker('.datepicker', {
-  formatter: (input, date, instance) => {
+  formatter: function(input, date, instance) {
     const value = date.toLocaleDateString()
     input.value = value
   },
